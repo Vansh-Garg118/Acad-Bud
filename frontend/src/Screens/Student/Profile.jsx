@@ -135,22 +135,22 @@ const Profile = () => {
                 onSubmit={checkPasswordHandler}
               >
                 <input
-                  type="password"
+                  type="text"
                   value={password.current}
                   onChange={(e) =>
                     setPassword({ ...password, current: e.target.value })
                   }
                   placeholder="Current Password"
-                  className="px-3 py-1 border-2 border-blue-500 outline-none rounded mt-4"
+                  className="px-3 py-1 border-2 border-blue-500 outline-none rounded mt-4 text-black"
                 />
                 <input
-                  type="password"
+                  type="text"
                   value={password.new}
                   onChange={(e) =>
                     setPassword({ ...password, new: e.target.value })
                   }
                   placeholder="New Password"
-                  className="px-3 py-1 border-2 border-blue-500 outline-none rounded mt-4"
+                  className="px-3 py-1 border-2 border-blue-500 outline-none rounded mt-4 text-black"
                 />
                 <button
                   className="mt-4 hover:border-b-2 hover:border-blue-500"
